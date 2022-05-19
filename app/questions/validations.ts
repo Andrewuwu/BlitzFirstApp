@@ -1,3 +1,3 @@
-import { createQuestion } from "./mutations/createQuestion"
+import { CreateQuestion } from "./mutations/createQuestion"
 
-export const createQuestionSchema = createQuestion
+export const createQuestionSchema = CreateQuestion
