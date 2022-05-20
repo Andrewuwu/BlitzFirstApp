@@ -1,0 +1,22 @@
+main {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  padding: 50px 50px 60px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #002410;
+  padding: 1rem 2rem;
+  color: #f4f4f4;
+  text-align: center;
+}
+.button {
+  font-size: 1rem;
+  background-color: #002410;
+  padding: 1rem 2rem;
+  margin: 5px;
+  color: #f4f4f4;
+  text-align: center;
+}

@@ -3,12 +3,6 @@ import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
 import Layout from "app/core/layouts/Layout"
 import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 import logout from "app/auth/mutations/logout"
-import logo from "public/logo.png"
-
-/*
- * This file is just for a pleasant getting started page for your new app.
- * You can delete everything in here and start from scratch if you like.
- */
 
 const UserInfo = () => {
   const currentUser = useCurrentUser()
@@ -18,7 +12,7 @@ const UserInfo = () => {
     return (
       <>
         <button
-          className="button small"
+          className="button"
           onClick={async () => {
             await logoutMutation()
           }}
@@ -36,12 +30,12 @@ const UserInfo = () => {
     return (
       <>
         <Link href={Routes.SignupPage()}>
-          <a className="button small">
+          <a className="button">
             <strong>Sign Up</strong>
           </a>
         </Link>
         <Link href={Routes.LoginPage()}>
-          <a className="button small">
+          <a className="button">
             <strong>Login</strong>
           </a>
         </Link>
@@ -53,12 +47,7 @@ const UserInfo = () => {
 const Home: BlitzPage = () => {
   return (
     <div>
-      <h1>Hello, world! this is me testing out things!</h1>
-      <p>
-        <Link href={Routes.QuestionsPage()}>
-          <a>Questions</a>
-        </Link>
-      </p>
+      <h1>Hello! Welcome to QuestionForum.</h1>
       <Suspense fallback="Loading...">
         <UserInfo />
       </Suspense>

@@ -1,3 +1,5 @@
+import { Navbar } from "app/core/components/Navbar"
+import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 import { Document, Html, DocumentHead, Main, BlitzScript /*DocumentContext*/ } from "blitz"
 
 class MyDocument extends Document {
@@ -12,6 +14,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <DocumentHead />
         <body>
+          <Navbar />
           <Main />
           <BlitzScript />
         </body>
